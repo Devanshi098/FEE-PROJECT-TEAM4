@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>army</title>
+    <style>
+        body
+{
+  background-image: url("pexels-pixabay-264146.jpg");
+ background-size: cover;
+    background-color: rgb(0, 0, 0);
+    color: white;
+ font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+  /* background-image: url("shooter.jpg");
+  background-size: cover; */
+    font-size: 40px;
+    font: bold;
+    text-align: center; 
+    size: 2000px;    
+}
+main{
+    font: 250;
+    font-size: 22px;
+	  padding: 20px;  
+}
+.position1
+{
+  margin-left: 50px;
+}
+.box
+{
+    
+    width: 1000px;
+    padding: 10px;
+    border: 5px solid gray;
+    background-color: black;
+    opacity: 70%;
+    color: white;
+    margin: 0;  
+}
+.margin
+{
+  text-align: center;
+
+}
+.photo
+{
+  margin-left: 850px;
+}
+nav {
+  display: block;
+  
+}
+.links {
+			position: fixed;
+			top: 0;
+			left: -900px; /* start off screen */
+			width: 200px;
+			height: 100%;
+			padding: 5px;
+			background-color: rgb(44, 43, 43);
+			transition: left 0.5s; /* animate the transition */
+		}
+
+        .links.open {
+            left: 0; /* slide in menu when opened */
+        }
+
+        .menu-icon {
+            position: fixed;
+            top: 5px;
+            left: 4px;
+            color: rgb(255, 254, 254);
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.5s; /* animate the transition */
+            z-index: 1; /* Move the z-index property here */
+        }
+
+        .menu-icon:hover {
+            color: rgb(104, 104, 104);
+        }
+
+        .menu-icon.open {
+            transform: rotate(180deg); /* rotate icon when menu is open */
+        }
+
+		.links a {
+			display: block;
+			margin-bottom: 9px;
+			color: rgb(255, 254, 254);
+			text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+			font-size: medium;
+		}
+		.links a:hover {
+			color: rgb(126, 126, 126);
+		}
+    </style>
+    </head>
+<body>
+   
+    <div class="divsize">
+    <header>
+       <h1>INDIAN ARMED FORCES</h1> 
+       <h3 class="margin">KITNE GHAZI AYE<img class="position1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Armed_forces_logo.png/100px-Armed_forces_logo.png" alt="INDIAN ARMY">&nbsp;&nbsp; KITHNE GHAZI GAYE</h3>
+       <!-- <p>A debute to our indian army, we are honored to have such strong and brave commandos in our nation, who insure our safety by fulfilling their duty!</p> -->
+    </header>
+</div>
+
+<!-- <img class="position1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Armed_forces_logo.png/100px-Armed_forces_logo.png" alt="INDIAN ARMY"> -->
+    <main class="item">
+        <!-- <img class="photo"src="1-removebg-preview.png" alt=""> -->
+	<div class="box">
+        <section>
+           
+		<p>
+			The Indian Armed Forces are the armed forces of the Republic of India. It consists of three professional uniformed services: the Indian Army, Indian Navy, and Indian Air Force. Additionally, the Indian Armed Forces are supported by the Central Armed Police Forces, Assam Rifles, Indian Coast Guard and Special Frontier Force and various inter-service commands and institutions such as the Strategic Forces Command, the Andaman and Nicobar Command and the Integrated Defence Staff. The President of India is the Supreme Commander of the Indian Armed Forces but the executive authority and responsibility for national security is vested in the Prime Minister of India and their chosen Cabinet Ministers. The Indian Armed Forces are under the management of the Ministry of Defence of the Government of India. With strength of over 1.4 million active personnel, it is the world's second-largest military force and has the world's largest volunteer army. It also has the third-largest defence budget in the world. The Global Firepower Index report lists it as the fourth most-powerful military.<br>
+
+		
+			The Indian Armed Forces have been engaged in a number of major armedoperations, including: the Indo-Pakistani wars of 1947, 1965 and 1971, the Portuguese-Indian War, the Sino-Indian War, the 1967 Cho La incident, the 1987 Sino-Indian skirmish, the Kargil War, and the Siachen conflict among others. India honours its armed forces and military personnel annually on Armed Forces Flag Day, 7 December. Armed with the nuclear triad, the Indian armed forces are steadily undergoing modernisation, with investments in areas such as futuristic soldier systems and missile defence systems.<br>
+            
+		
+			The Department of Defence Production of the Ministry of Defence is responsible for the indigenous production of equipment used by the Indian Armed Forces. It comprises 16 Defence PSUs. India remains one of the largest importer of defence equipment with Russia, Israel, France and the United States being the top foreign suppliers of military equipment. The Government of India, as part of the Make in India initiative, seeks to indigenise manufacturing and reduce dependence on imports for defence.<br>
+		</p>
+    </section>
+		<div id="quote">
+			<blockquote><i>"Not gold but only men can make, A People great and strong ,
+                Men who, for truth and honor's sake. Stand fast and suffer long"</i></blockquote>
+			<cite>Indian Armed Forces</cite>
+		</div>
+    </div>
+    </main>
+	<div class="menu-icon" onclick="toggleMenu(event)">☰</div>
+    <br>
+	<div>
+		<b style="color:rgb(244, 244, 244);">
+			<h1 style="text-align:center;">Tribute To The Indian Armed Forces</h1>
+			<br>
+			<br>
+		</b>
+    </div>
+    <div class="links" style="text-align:center;">
+			<pre>
+				<br>
+				<br>
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="history.html">History</a>
+				<a href="tribute.html">Pay Tribute</a>
+				
+			</pre>
+    </div>
+	<script>
+		function toggleMenu(event) {
+			event.stopPropagation();
+			const links = document.querySelector('.links');
+			const icon = document.querySelector('.menu-icon');
+			links.classList.toggle('open');
+			icon.classList.toggle('open');
+		}
+	</script>
+</body>
+</html>

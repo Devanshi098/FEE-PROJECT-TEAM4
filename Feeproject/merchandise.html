@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/84cd0d064c.js" crossorigin="anonymous"></script>
+  <title>Merchandise Page</title>
+  <style>
+    body {
+        background-color: black;
+        color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #141414;
+      border: 1px solid #ccc;
+    }
+    
+    .product {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .product img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+    
+    .product-info {
+      flex: 1;
+    }
+    
+    .product h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    .product p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    
+    .product .price {
+      font-weight: bold;
+    }
+    
+    .search-bar {
+       
+        text-align: right;
+      margin-bottom: 20px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    a {
+    color: white;
+    text-decoration: none;
+  }
+    .card1 {
+        display: flex;
+      justify-content: space-between;
+        text-align: center;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px white;
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+      text-decoration: none;
+    }
+    
+    .card1:hover {
+      transform: scale(1.05);
+    }
+    
+    .card1-image {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card1-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card1-content {
+        
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    .card1-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    
+    .card1-description {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .card1-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .card1-button:hover {
+      background-color: #555;
+    }
+    .card2 {
+        display: flex;
+      justify-content: space-between;
+        text-align: center;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px white;
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+    
+    .card2:hover {
+      transform: scale(1.05);
+    }
+    
+    .card2-image {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card2-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card2-content {
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    .card2-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    
+    .card2-description {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .card2-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .card2-button:hover {
+      background-color: #555;
+    }
+    .card3 {
+        display: flex;
+      justify-content: space-between;
+        text-align: center;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px white;
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+    
+    .card3:hover {
+      transform: scale(1.05);
+    }
+    
+    .card3-image {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card3-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card3-content {
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    .card3-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    
+    .card3-description {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .card3-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .card3-button:hover {
+      background-color: #555;
+    }
+    .card4 {
+        display: flex;
+      justify-content: space-between;
+        text-align: center;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px white;
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+      padding-left: 80px;
+    }
+    
+    .card4:hover {
+      transform: scale(1.05);
+    }
+    
+    .card4-image {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card4-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card4-content {
+      padding: 20px;
+      background-color: #fff;
+      
+    }
+    
+    .card4-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    
+    .card4-description {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .card4-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .card4-button:hover {
+      background-color: #555;
+    }
+    .card5 {
+        display: flex;
+      justify-content: space-between;
+        text-align: center;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px white;
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+      padding-left: 60px;
+    }
+    
+    .card5:hover {
+      transform: scale(1.05);
+    }
+    
+    .card5-image {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card5-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card5-content {
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    .card5-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    
+    .card5-description {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .card5-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .card5-button:hover {
+      background-color: #555;
+    }
+    .card6 {
+        display: flex;
+      justify-content: space-between;
+        text-align: center;
+      width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px white;
+      overflow: hidden;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+      padding-left: 140px;
+    }
+    
+    .card6:hover {
+      transform: scale(1.05);
+    }
+    
+    .card6-image {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .card6-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card6-content {
+      padding: 20px;
+      background-color: #fff;
+    }
+    
+    .card6-title {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+    
+    .card6-description {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .card6-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .card6-button:hover {
+      background-color: #555;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Merchandise Page</h1>
+     <div class="search-bar">
+        <i  class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search products">
+     
+    </div>
+  </header>
+  
+  <main>
+   
+  
+    <div class="product">
+        <div class="card card1">
+          <a href="payementgateway.html">
+            <div class="card-image">
+              <img src="shirt.webp" alt="Indian Army shirts">
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Indian Army Shirts</h2>
+              <p class="card-description">Oliveplanet Private Limited - Offering Men Cotton Authorized Indian Army Uniform (Shirt) at Rs 1200/piece in Bengaluru, Karnataka. Also find Army ...</p>
+              <p class="price">M.R.P.: ₹1,200<br><i>Inclusive of all taxes</i></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <div class="card card2">
+          <a href="payementgateway.html">
+            <div class="card-image">
+              <img src="cap.jpg" alt="Indian Army caps">
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Indian Army Caps</h2>
+              <p class="card-description">KT - Cotton Military Indian Army Cap for Men & Women, Baseball Sports Running Camouflage Army Printed Adjustable Soldier Caps</p>
+              <p class="price">M.R.P.: ₹250.00<br><i>Inclusive of all taxes</i></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="product">
+        <div class="card card3">
+          <a href="payementgateway.html">
+            <div class="card-image">
+              <img src="boots.jpg" alt="Indian Army boots">
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Indian Army Boots</h2>
+              <p class="card-description">Rudham Military and Adventure Store - Offering Tactical Combat Shoes at Rs 3,000/pair in Delhi, Delhi. Get best price and read about ...</p>
+              <p class="price">M.R.P.: ₹3,000.00<br><i>Inclusive of all taxes</i></p>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <div class="product">
+          <div class="card4">
+          <a href="payementgateway.html">
+        <img src="belt.webp" alt="indian army shirts ">
+        <div class="product-info">
+          <h2>Indian Army belts</h2>
+          <p>JELINDA Men's Tactical Belt Military Style Webbing Nylon Belt for Men's with Metal Buckle</p>
+          <p class="price">M.R.P.: ₹700<br><i>Inclusive of all taxes</i></p>
+          </div>
+          </a>
+        </div>
+      </div>
+  
+      <div class="product">
+          <div class="card5">
+              <a href="payementgateway.html">
+        <img src="key chains.jpg" alt="indian army shirts ">
+        <div class="product-info">
+          <h2>Indian Army key chain</h2>
+          <p>Robin Exports Brass Indian Army Logo with Two Sword on Ashoka Stambh with Key Chain 12 Cmi</p>
+          <p class="price">M.R.P.: ₹300<br><i>Inclusive of all taxes</i></p>
+          </div>
+          </a>
+        </div>
+      </div>
+  
+      <div class="product">
+          <div class="card6">
+              <a href="payementgateway.html">
+        <img src="pants.webp" alt="indian army shirts ">
+        <div class="product-info">
+          <h2>Indian Army pants</h2>
+          <p>Men Cotton Military Cargo Pants Camouflage Army Trousers Cargo Pants</p>
+          <p class="price">M.R.P.: ₹1,250<br><i>Inclusive of all taxes</i></p>
+          </div>
+          </a>
+        </div>
+      </div>
+  </main>
+  
+  <footer>
+    &copy; 2023 Merchandice Page. All rights reserved.
+  </footer>
+  
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const products = document.getElementsByClassName('product');
+    
+    searchInput.addEventListener('input', function() {
+      const searchTerm = searchInput.value.toLowerCase();
+      
+      for (let i = 0; i < products.length; i++) {
+        const productName = products[i].querySelector('h2').textContent.toLowerCase();
+        
+        if (productName.includes(searchTerm)) {
+          products[i].style.display = 'flex';
+        } else {
+          products[i].style.display = 'none';
+        }
+      }
+    });
+  </script>
+</body>
+</html>

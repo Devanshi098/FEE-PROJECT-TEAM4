@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIBUTE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico?=2">
+</head>
+<body>
+    <h1 style="color: white;">TRIBUTE PAGE</h1>
+    
+    <p>The Indian Defense Forces have been serving our nation with utmost dedication and sacrifice for decades, 
+        protecting our borders and ensuring the safety and security of its citizens.
+        It's time for us to acknowledge their efforts and pay tribute to the brave soldiers who risk their lives to protect us.
+        Writing a tribute to the Indian Defense Forces is a small yet powerful way to show our gratitude and appreciation for their selfless service.
+        By sharing our thoughts and feelings about their sacrifice, 
+        we can make a difference in their lives and let them know that their hard work and bravery are recognized and valued. 
+        Let's come together and honor the Indian Defense Forces by writing heartfelt tributes and expressing our gratitude for their service.</p>
+        <br>
+        <br>
+
+      <h3>GALLERY</h3>
+      <br>
+      <br>
+        <main>
+          <img src="1.jpg">
+          <video width="400" height="240" autoplay controls muted loop="true">
+            <source src="video4.mp4" type="video/mp4">
+            </video>
+          
+          <video width="400" height="240" autoplay controls muted loop="true">
+            <source src="video3.mp4" type="video/mp4">
+            </video>
+          <img src="3.jpg">
+          <video width="400" height="240" autoplay controls muted loop="true">
+            <source src="video2.mp4" type="video/mp4">
+            </video>
+          <img src="5.jpg">
+          
+          <img src="4.png">
+          <video width="400" height="240" autoplay controls muted loop="true">
+            <source src="video1.mp4" type="video/mp4">
+            </video>
+            
+          <img src="6.jpg">
+          <video width="400" height="240" autoplay controls muted loop="true">
+            <source src="video5.mp4" type="video/mp4">
+            </video>
+          <img src="7.jpg">
+          <img src="8.jpg">
+          <video width="400" height="240" autoplay controls muted loop="true">
+            <source src="video6.mp4" type="video/mp4">
+            </video>
+          <img src="9.jpg">
+          <img src="10.jpg">
+         
+        
+
+  
+
+
+
+        </main>
+
+	<style>
+    	.links {
+			position: fixed;
+			top: 0;
+			left: -900px; /* start off screen */
+			width: 200px;
+			height: 100%;
+			padding: 5px;
+			background-color: rgb(44, 43, 43);
+			transition: left 0.5s; /* animate the transition */
+		}
+
+        .links.open {
+            left: 0; /* slide in menu when opened */
+        }
+
+        .menu-icon {
+            position: fixed;
+            top: 5px;
+            left: 4px;
+            color: rgb(255, 254, 254);
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.5s; /* animate the transition */
+            z-index: 1; /* Move the z-index property here */
+        }
+
+        .menu-icon:hover {
+            color: rgb(104, 104, 104);
+        }
+
+        .menu-icon.open {
+            transform: rotate(180deg); /* rotate icon when menu is open */
+        }
+
+		.links a {
+			display: block;
+			margin-bottom: 9px;
+			color: rgb(255, 254, 254);
+			text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+			font-size: medium;
+		}
+		.links a:hover {
+			color: rgb(126, 126, 126);
+		}
+		body {
+			background-color: rgb(0, 0, 0);
+		}
+		.links {
+			position: fixed;
+			top: 0;
+			left: -900px; /* start off screen */
+			width: 200px;
+			height: 100%;
+			padding: 5px;
+			background-color: rgb(44, 43, 43);
+			transition: left 0.5s; /* animate the transition */
+		}
+
+        .links.open {
+            left: 0; /* slide in menu when opened */
+        }
+
+        .menu-icon {
+            position: fixed;
+            top: 5px;
+            left: 4px;
+            color: rgb(255, 254, 254);
+            font-size: 30px;
+            cursor: pointer;
+            transition: transform 0.5s; /* animate the transition */
+            z-index: 1; /* Move the z-index property here */
+        }
+
+        .menu-icon:hover {
+            color: rgb(104, 104, 104);
+        }
+
+        .menu-icon.open {
+            transform: rotate(180deg); /* rotate icon when menu is open */
+        }
+
+		.links a {
+			display: block;
+			margin-bottom: 9px;
+			color: rgb(255, 254, 254);
+			text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+			font-size: medium;
+		}
+		.links a:hover {
+			color: rgb(126, 126, 126);
+		}
+		h1 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: xx-large;
+			font-stretch: semi-expanded;
+		}
+	</style>
+</head>
+<body>
+  <div class="menu-icon" onclick="toggleMenu(event)">☰</div>
+  <br>
+<div>
+  <b style="color:rgb(244, 244, 244);">
+    
+    <br>
+    <br>
+  </b>
+  </div>
+  <div class="links" style="text-align:center;">
+    <pre>
+      <br>
+      <br>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="history.html">History</a>
+      <a href="tribute.html">Pay Tribute</a>
+      
+    </pre>
+  </div>
+    <script>
+      function toggleMenu(event) {
+          event.stopPropagation();
+          const links = document.querySelector('.links');
+          const icon = document.querySelector('.menu-icon');
+          links.classList.toggle('open');
+          icon.classList.toggle('open');
+      }
+  </script>
+  
+</body>
+</html>
+          <br>
+          <br>
+          <br>
+            <h1>SEND YOUR TRIBUTE HERE</h1>
+          <form  action="mailto:victorforces07@gmail.com" method="post" enctype="text/plain">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+  
+  <input type="submit" value="Send">
+</form>
+
+
+          
+       
+           
+</body>
+</html>
